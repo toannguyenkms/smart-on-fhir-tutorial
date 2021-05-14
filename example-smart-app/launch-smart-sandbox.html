@@ -29,8 +29,15 @@
         If/when this changes, or when working with other authorization servers, please update the client_id field here. -->
     <script>
       FHIR.oauth2.authorize({
-        'client_id': 'YOUR-SMART-HEALTH-IT-CLIENT-ID-HERE',
-        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+        client: {
+          client_id: "dfe8895b-bc38-4ca2-ad65-c9d4b1836f52",
+          scope:  "patient/Patient.read patient/Observation.read launch online_access openid profile",
+          redirect_uri: "https://toannguyenkms.github.io/smart-on-fhir-tutorial/example-smart-app",
+          state: "1234"
+        },
+        
+        server:
+          "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d"
       });
     </script>
     <div class="spinner">
