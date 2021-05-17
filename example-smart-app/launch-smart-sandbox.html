@@ -31,7 +31,7 @@
       FHIR.oauth2.authorize({
         client: {
           client_id: "6faa0fe6-8eb2-4217-8c4f-0910f7fed0b5",
-          scope:  "patient/Patient.read patient/Observation.read launch online_access openid profile",
+          scope:  "patient/*.* launch/patient openid profile online_access",
           redirect_uri: "https://toannguyenkms.github.io/smart-on-fhir-tutorial/example-smart-app",
           state: "1234"
         },
