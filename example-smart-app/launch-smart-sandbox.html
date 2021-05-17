@@ -30,14 +30,14 @@
     <script>
       FHIR.oauth2.authorize({
         client: {
-          client_id: "dfe8895b-bc38-4ca2-ad65-c9d4b1836f52",
+          client_id: "6faa0fe6-8eb2-4217-8c4f-0910f7fed0b5",
           scope:  "patient/Patient.read patient/Observation.read launch online_access openid profile",
           redirect_uri: "https://toannguyenkms.github.io/smart-on-fhir-tutorial/example-smart-app",
           state: "1234"
         },
         
         server:
-          "https://fhir-ehr-code.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d"
+          "https://platform.ppe.chbase.com/api/fhir"
       });
     </script>
     <div class="spinner">
