@@ -30,15 +30,15 @@
     <script>
       FHIR.oauth2.authorize({
         client: {
-          client_id: "6faa0fe6-8eb2-4217-8c4f-0910f7fed0b5",
+          client_id: "994530ad-c960-43dd-94cb-4e748baa5b49",
           scope:  "patient/*.* launch/patient openid profile online_access",
           redirect_uri: "https://toannguyenkms.github.io/smart-on-fhir-tutorial/example-smart-app",
-          secret: "5e24b756-9a70-4ea7-a602-150c639280a3",
+          // secret: "5e24b756-9a70-4ea7-a602-150c639280a3",
           state: "chbaseppe1"
         },
         
         server:
-          "https://platform.ppe.chbase.com/api/fhir"
+          "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/"
       });
     </script>
     <div class="spinner">
